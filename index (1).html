@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Personal software engineering portfolio">
+<title>Your Name — Software Engineer</title>
+<style>
+:root{--bg:#0b0d10;--surface:#11151a;--border:#252c34;--text:#f2f4f7;--muted:#9aa4b2;--max:1080px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:inherit;text-decoration:none}.container{width:min(calc(100% - 40px),var(--max));margin:auto}
+nav{position:sticky;top:0;z-index:5;background:rgba(11,13,16,.88);backdrop-filter:blur(14px);border-bottom:1px solid #181d23}
+.nav{height:68px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:700;letter-spacing:-.03em}
+.links{display:flex;gap:28px;color:var(--muted);font-size:.92rem}.links a:hover{color:var(--text)}
+.hero{min-height:78vh;display:flex;align-items:center;padding:100px 0 80px}
+.eyebrow,.label{color:var(--muted);font-size:.8rem;letter-spacing:.1em;text-transform:uppercase}
+.eyebrow{margin-bottom:18px}h1{font-size:clamp(3.2rem,7vw,6.2rem);line-height:.98;letter-spacing:-.065em;margin-bottom:28px}
+.hero p,.intro{max-width:700px;color:var(--muted);font-size:1.1rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+.btn{padding:11px 17px;border:1px solid var(--border);border-radius:9px;font-size:.92rem}.btn.primary{background:var(--text);color:var(--bg);border-color:var(--text)}
+section{padding:95px 0;border-top:1px solid var(--border)}h2{font-size:clamp(2rem,4vw,3.2rem);line-height:1.05;letter-spacing:-.045em;margin:12px 0 28px}
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:60px}.muted{color:var(--muted)}.about p+p{margin-top:18px}
+.facts{display:grid;gap:12px}.fact,.project,.research{padding:28px;border:1px solid var(--border);border-radius:14px;background:var(--surface)}.fact small{display:block;color:var(--muted)}
+.skills{display:flex;flex-wrap:wrap;gap:10px}.skill,.tag{border:1px solid var(--border);background:var(--surface);border-radius:7px;padding:7px 11px;color:#cbd3dc;font-size:.88rem}
+.projects{display:grid;gap:18px;margin-top:40px}.project{transition:.2s}.project:hover{border-color:#424c58;transform:translateY(-2px)}
+.project-top{display:flex;justify-content:space-between;gap:20px}.project h3,.research h3{font-size:1.4rem;margin-top:5px}.type{color:var(--muted);font-size:.76rem;text-transform:uppercase;letter-spacing:.08em}
+.project p,.research p{color:var(--muted);max-width:820px;margin:17px 0}.tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:20px}.tag{font-size:.76rem;padding:5px 8px}.project-links,.contact-links{display:flex;gap:18px;color:#dce7f5;font-size:.9rem}.project-links a:hover,.contact-links a:hover{text-decoration:underline}
+.status{display:inline-block;margin-top:18px;border:1px solid var(--border);border-radius:6px;padding:5px 9px;color:#b9c4d0;font-size:.78rem}
+.timeline{display:grid;gap:20px}.item{display:grid;grid-template-columns:150px 1fr;gap:30px;padding-bottom:22px;border-bottom:1px solid var(--border)}.date{color:var(--muted);font-size:.9rem}
+.contact{display:flex;align-items:end;justify-content:space-between;gap:30px}footer{border-top:1px solid var(--border);padding:28px 0;color:var(--muted);font-size:.82rem}
+@media(max-width:760px){.links{display:none}.hero{min-height:auto;padding:80px 0}.about{grid-template-columns:1fr;gap:35px}.item{grid-template-columns:1fr;gap:5px}.contact{display:block}.contact-links{margin-top:25px}.project-top{flex-direction:column}}
+</style>
+</head>
+<body>
+<nav><div class="container nav"><a class="logo" href="#">YOUR NAME</a><div class="links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#research">Research</a><a href="#education">Education</a><a href="#contact">Contact</a></div></div></nav>
+
+<header class="hero"><div class="container">
+<div class="eyebrow">Software Engineering · Backend · Systems</div>
+<h1>I build software<br>and study how it works.</h1>
+<p>I'm a software engineering student interested in backend systems, databases, distributed systems, performance, and eventually AI/ML. I like understanding what happens underneath an application, not just making the interface work.</p>
+<div class="actions"><a class="btn primary" href="#projects">View projects</a><a class="btn" href="https://github.com/YOUR_USERNAME" target="_blank">GitHub ↗</a><a class="btn" href="#contact">Contact</a></div>
+</div></header>
+
+<section id="about"><div class="container"><div class="label">01 — About</div><h2>Engineering first.</h2><div class="about"><div class="muted"><p>I enjoy building backend systems where correctness, performance, and reliability actually matter.</p><p>My current focus is backend engineering: APIs, PostgreSQL, Redis, concurrency, caching, rate limiting, and system design. I also enjoy turning things I build into experiments so I can understand their behavior rather than relying only on assumptions.</p><p>Over time, I plan to explore distributed systems and AI/ML engineering while keeping strong foundations in computer science and software engineering.</p></div><div class="facts"><div class="fact"><small>Current focus</small>Backend Engineering</div><div class="fact"><small>Interested in</small>Systems · Databases · AI/ML</div><div class="fact"><small>Based in</small>India</div><div class="fact"><small>Currently building</small>Backend & systems projects</div></div></div></div></section>
+
+<section><div class="container"><div class="label">02 — Skills</div><h2>Tools I work with.</h2><div class="skills"><span class="skill">Python</span><span class="skill">FastAPI</span><span class="skill">PostgreSQL</span><span class="skill">Redis</span><span class="skill">SQL</span><span class="skill">REST APIs</span><span class="skill">Docker</span><span class="skill">Git</span><span class="skill">Linux</span><span class="skill">System Design</span><span class="skill">Concurrency</span><span class="skill">Caching</span></div></div></section>
+
+<section id="projects"><div class="container"><div class="label">03 — Projects</div><h2>Things I've built.</h2><p class="intro">I prefer projects that force me to deal with real engineering problems rather than simply connecting a frontend to a database.</p><div class="projects">
+<article class="project"><div class="project-top"><div><div class="type">Featured · Backend System</div><h3>Concurrent Ticket Booking System</h3></div><div class="type">01</div></div><p>A backend ticket-booking system designed around transactional consistency and concurrent access. PostgreSQL transactions and row-level locking protect highly contended ticket inventory, while Redis handles caching and API rate limiting.</p><div class="tags"><span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">Transactions</span><span class="tag">Row-level locking</span><span class="tag">Caching</span><span class="tag">Rate limiting</span></div><div class="project-links"><a href="https://github.com/YOUR_USERNAME/ticket-booking-system" target="_blank">Source code ↗</a><a href="#" target="_blank">Technical report ↗</a></div></article>
+<article class="project"><div class="project-top"><div><div class="type">Backend</div><h3>Project Name</h3></div><div class="type">02</div></div><p>Replace this with another substantial project. Explain the engineering problem, architecture, and technical decisions.</p><div class="tags"><span class="tag">Python</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span></div><div class="project-links"><a href="#" target="_blank">Source code ↗</a></div></article>
+<article class="project"><div class="project-top"><div><div class="type">Systems</div><h3>Project Name</h3></div><div class="type">03</div></div><p>Another project can go here. Keep the description focused on what you actually built and learned.</p><div class="tags"><span class="tag">Systems</span><span class="tag">Performance</span><span class="tag">Docker</span></div><div class="project-links"><a href="#" target="_blank">Source code ↗</a></div></article>
+</div></div></section>
+
+<section id="research"><div class="container"><div class="label">04 — Research</div><h2>Experiments, not just projects.</h2><p class="intro">Some engineering questions are worth investigating systematically. This section is for research experiments, technical studies, and work that may eventually become a publication.</p><div class="research"><div class="type">Current study</div><h3>An Empirical Evaluation of Rate-Limiting Algorithms Under Bursty API Workloads</h3><p>An experimental comparison of Fixed Window, Sliding Window, and Token Bucket rate-limiting algorithms under different traffic patterns, examining enforcement behavior, latency, throughput, burst handling, and system-level trade-offs.</p><span class="status">In progress</span></div></div></section>
+
+<section id="education"><div class="container"><div class="label">05 — Education</div><h2>Education.</h2><div class="timeline"><div class="item"><div class="date">20XX — 20XX</div><div><h3>Your Degree</h3><p class="muted">Your University · Location</p></div></div><div class="item"><div class="date">20XX</div><div><h3>Additional Education</h3><p class="muted">School / Institution · Location</p></div></div></div></div></section>
+
+<section id="contact"><div class="container contact"><div><div class="label">06 — Contact</div><h2>Let's connect.</h2><p class="muted">I'm interested in software engineering, backend systems, distributed systems, research, and interesting technical problems.</p></div><div class="contact-links"><a href="mailto:your.email@example.com">Email ↗</a><a href="https://github.com/YOUR_USERNAME" target="_blank">GitHub ↗</a><a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank">LinkedIn ↗</a></div></div></section>
+
+<footer><div class="container">© 2026 Your Name. Built with HTML & CSS.</div></footer>
+</body>
+</html>
