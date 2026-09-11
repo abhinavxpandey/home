@@ -101,12 +101,43 @@ nav{
     font-size:18px
 }
 
-.education{
-    margin-top:32px;
-    padding-left:18px;
-    border-left:2px solid #222;
-    color:#444;
-    font-size:14px
+.education {
+    margin-top: 38px;
+    padding-left: 22px;
+    border-left: 1px solid #d8d8d8;
+    position: relative;
+    color: #444;
+}
+
+.education::before {
+    content: "";
+    position: absolute;
+    left: -4px;
+    top: 5px;
+    width: 7px;
+    height: 7px;
+    background: #171717;
+    border-radius: 50%;
+}
+
+.education-status {
+    color: #999;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-bottom: 4px;
+}
+
+.education-degree {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22px;
+    color: #222;
+}
+
+.education-place {
+    margin-top: 3px;
+    color: #777;
+    font-size: 14px;
 }
 
 section{
@@ -283,10 +314,20 @@ footer{
             </p>
 
             <div class="education">
-                Currently pursuing B.Sc. Computer Science<br>
-                Department of Computer Science<br>
-                Assam University
-            </div>
+
+    <div class="education-status">
+        Present
+    </div>
+
+    <div class="education-degree">
+        B.Sc. Computer Science
+    </div>
+
+    <div class="education-place">
+        Department of Computer Science · Assam University
+    </div>
+
+</div>
 
         </div>
     </section>
